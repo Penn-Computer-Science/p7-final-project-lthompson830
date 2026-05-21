@@ -59,6 +59,12 @@ def draw_shape():
         ]
         canvas.create_polygon(points, fill="blue")
 
+    elif "rectangle" == shape:
+        canvas.create_rectangle(150, 200, 350, 300, fill="blue")
+
+    elif "oval" == shape:
+        canvas.create_oval(150, 200, 350, 300, fill="blue")
+
 
 # This is for if you enter a shape that isn't implemented
 # Of if you enter something that isn't the name of a shape
